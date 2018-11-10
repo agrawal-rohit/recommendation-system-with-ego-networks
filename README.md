@@ -60,6 +60,7 @@ Using the ASIN (0875421210), we can obtain the metadata associated with that boo
 ![Test Item](https://user-images.githubusercontent.com/29514438/48280932-1a690280-e47b-11e8-85bb-07df96e3664c.jpg)
 
 We get the degree-1 ego network by taking the books that have been co-purchased with this one previously. Then we proceed to narrow it further down to the most similar books. This is done by using the island method on the degree-1 graph. Only the edges with threshold>= 0.5 are retained. And hence we obtain the trimmed graph which contains neighbors of the node with ASIN (0875421210).
+
 ![Ego Graph](https://user-images.githubusercontent.com/29514438/48280947-2228a700-e47b-11e8-8f8f-80ae25991478.png)
 ![Ego Trim Graph](https://user-images.githubusercontent.com/29514438/48280945-2228a700-e47b-11e8-86d0-d357c6272b21.png)
 
